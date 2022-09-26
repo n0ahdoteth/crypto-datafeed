@@ -44,6 +44,7 @@ const Cryptocurrencies = ({simplified}) => {
 
           </Col>
           
+          
 
         ))}
       </Row>
