@@ -1,12 +1,19 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import {render} from "react-dom"
 import App from "./App.js"
 import {BrowserRouter as Router} from 'react-router-dom'
+import {Provider} from 'react-redux';
 import 'antd/dist/antd.css'
+import store from './app/store';
 
-ReactDOM.render(
+import {createRoot} from 'react-dom/client'
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(
     <Router>
-        <App />
-    </Router>,  
-    document.getElementById('root')
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </Router>
 );
