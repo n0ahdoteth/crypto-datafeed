@@ -44,6 +44,11 @@ const Cryptocurrencies = ({simplified}) => {
 
           </Col>
           
+<<<<<<< HEAD
+=======
+
+          
+>>>>>>> 3e332a8faa53fbb1e9b334139cc53798462b4834
 
           
         ))}
